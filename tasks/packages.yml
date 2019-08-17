@@ -1,12 +1,15 @@
 - name: Install packages
   apt: name={{item}}
-  with_items:
+  loop:
     - htop
+    - build-essential
     - openjdk-8-jdk
     - curl
     - git
+    - wget
+    - virtualbox
 
 - name: Install snaps
-  snap:
-    name: code
-    classic: yes
+  snap: 
+    name: ['code', 'go']
+    classic: yes 
