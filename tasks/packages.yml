@@ -8,9 +8,7 @@
         'git',
         'wget',
         'virtualbox',
-        'chromium-browser',
-        '',
-        ''
+        'chromium-browser'
         ]
 
 - name: Install snaps
