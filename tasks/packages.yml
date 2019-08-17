@@ -1,15 +1,22 @@
 - name: Install packages
-  apt: name={{item}}
-  loop:
-    - htop
-    - build-essential
-    - openjdk-8-jdk
-    - curl
-    - git
-    - wget
-    - virtualbox
+  apt:
+    name: [
+        'htop',
+        'build-essential',
+        'openjdk-8-jdk',
+        'curl',
+        'git',
+        'wget',
+        'virtualbox',
+        'chromium-browser',
+        '',
+        ''
+        ]
 
 - name: Install snaps
   snap: 
-    name: ['code', 'go']
+    name: [
+        'code', 
+        'go'
+        ]
     classic: yes
