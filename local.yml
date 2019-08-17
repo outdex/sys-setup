@@ -3,11 +3,8 @@
   become: true
   pre_tasks:
     - name: update repositories
-      dnf: update_cache=yes
+      apt: update_cache=yes
       changed_when: False
 
   tasks:
-    - include: tasks/users.yml
-    - include: tasks/cron.yml
-    - include: tasks/packages.yml
-    - include: tasks/gnome.yml 
+    - include: tasks/packages.yml 

@@ -2,5 +2,11 @@
   apt: name={{item}}
   with_items:
     - htop
-    - mc
-    - tmux
+    - openjdk-8-jdk
+    - curl
+    - git
+
+- name: Install snaps
+  snap:
+    name: code
+    classic: yes
