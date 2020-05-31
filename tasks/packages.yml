@@ -55,12 +55,14 @@
         'virtualbox-qt',
         'zlib1g-dev',
         'zlibc',
+        'awscli',
         ]
 
 - name: Install snaps',
   snap: 
     name: [
         'code', 
-        'tusk'
+        'tusk',
+        'docker'
         ]
     classic: yes
